@@ -6,16 +6,14 @@ public class Main {
 
         int valueMax = 0;
         int indexMax = 0;
-        for (int i = 0; i < maxima.length; i++) {
+
+        int valueMin = 1000;
+        int indexMin = 0;
+        for (int i = 0; i < cidades.length; i++) {
             if (valueMax < maxima[i]) {
                 valueMax = maxima[i];
                 indexMax = i;
             };
-        }
-
-        int valueMin = 1000;
-        int indexMin = 0;
-        for (int i = 0; i < minima.length; i++) {
             if (valueMin > minima[i]) {
                 valueMin = minima[i];
                 indexMin = i;
