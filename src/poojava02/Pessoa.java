@@ -23,9 +23,28 @@ public class Pessoa {
         this.altura = altura;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
     public int calcularIMC () {
         double resultIMC = peso / ( altura * altura);
-        System.out.println(resultIMC);
         if (resultIMC < 20) {
             return -1;
         }
