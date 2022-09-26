@@ -7,9 +7,9 @@ public class AppPessoa {
     public static void main(String[] args) {
         List<Pessoa> lista = new ArrayList<>();
 
-        lista.add(new Pessoa("Amanda"));
-        lista.add(new Pessoa("Mariana"));
-        lista.add(new Pessoa("Fernanda"));
+        lista.add(new Pessoa("Amanda", 25, "Ferreira"));
+        lista.add(new Pessoa("Mariana", 36, "Saraiva"));
+        lista.add(new Pessoa("Fernanda", 32, "Fortini"));
 
         System.out.println(lista);
 
