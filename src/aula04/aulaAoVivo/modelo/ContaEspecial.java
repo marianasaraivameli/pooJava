@@ -2,10 +2,12 @@ package aula04.aulaAoVivo.modelo;
 
 import aula04.aulaAoVivo.exception.InvalidNumberException;
 
-public class ContaCorrente extends Conta {
+public class ContaEspecial extends Conta {
+    private double limite;
 
-    public ContaCorrente(int numero, Cliente cliente) {
+    public ContaEspecial(int numero, Cliente cliente, double limite) {
         super(numero, cliente);
+        this.limite = limite;
     }
 
     @Override
@@ -16,14 +18,13 @@ public class ContaCorrente extends Conta {
         return super.sacar(valor);
     }
 
-
     // verifica se tem saldo na conta
     private boolean saldoInsuficiente(double valor) {
-        return getSaldo() < valor;
+        return (getSaldo() + limite) < valor;
     }
 
     @Override
     public String toString() {
-        return "Conta Corrente: " + super.toString();
+        return "Conta especial: " + super.toString();
     }
 }
