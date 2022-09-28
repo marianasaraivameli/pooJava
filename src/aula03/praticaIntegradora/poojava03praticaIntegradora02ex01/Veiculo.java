@@ -38,7 +38,7 @@ public class Veiculo {
     @Override
     public String toString() {
         return "Veiculo{" +
-                "modelo='" + modelo + '\'' +
+                "aula04.aulaAoVivo.modelo='" + modelo + '\'' +
                 ", marca='" + marca + '\'' +
                 ", preco=" + preco +
                 '}';

@@ -13,7 +13,7 @@ public class MainLambda {
     }
 
     // somente sera usado no local que será escrito, em um único. o metodo não é aproveitado em outro lugar.
-    // exemplo de sintaxe aula03.aulaAoVivo.lambda () -> {}
+    // exemplo de sintaxe aula03.aula04.aulaAoVivo.lambda () -> {}
 
     public static void imprimir(String texto, InterfaceString interfaceString) {
 

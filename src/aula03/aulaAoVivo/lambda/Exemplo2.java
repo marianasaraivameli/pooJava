@@ -7,7 +7,7 @@ public class Exemplo2 {
     public static void main(String[] args) {
         List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-        // exemplo aula03.aulaAoVivo.lambda
+        // exemplo aula03.aula04.aulaAoVivo.lambda
         // numeros.forEach( (n)-> System.out.println(n) );
 
         numeros.forEach( (n)-> {
