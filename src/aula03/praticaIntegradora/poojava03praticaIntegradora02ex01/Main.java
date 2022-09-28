@@ -30,5 +30,12 @@ public class Main {
 
         System.out.println("Lista ordenada por Marca em ordem Alfabetica:");
         garagem.veiculosOrdenadosDePorMarca();
+
+        System.out.println("Filtro de veículos com preço máximo de 1000:");
+        garagem.filtroDeVeiculoComPrecoMaximo(1000.0);
+
+        System.out.println("Filtro de veículos com preço minimo de 1000:");
+        garagem.filtroDeVeiculoComPrecoMinimo(1000.0);
+
     }
 }

@@ -44,4 +44,16 @@ public class Garagem {
                 .sorted((v1,v2) -> v1.getMarca().compareTo(v2.getMarca()))
                 .forEach(System.out::println);
     }
+
+    public void filtroDeVeiculoComPrecoMaximo(Double valor) {
+        listaVeiculos.stream()
+                .filter(v -> v.getPreco() < valor )
+                .forEach(System.out::println);
+    }
+
+    public void filtroDeVeiculoComPrecoMinimo(Double valor) {
+        listaVeiculos.stream()
+                .filter(v -> v.getPreco() >= valor )
+                .forEach(System.out::println);
+    }
 }
