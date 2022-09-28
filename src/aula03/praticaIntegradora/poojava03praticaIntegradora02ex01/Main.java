@@ -27,5 +27,8 @@ public class Main {
 
         System.out.println("Lista ordenada por Preço em ordem crescente:");
         garagem.veiculosOrdenadosDePorPreco();
+
+        System.out.println("Lista ordenada por Marca em ordem Alfabetica:");
+        garagem.veiculosOrdenadosDePorMarca();
     }
 }

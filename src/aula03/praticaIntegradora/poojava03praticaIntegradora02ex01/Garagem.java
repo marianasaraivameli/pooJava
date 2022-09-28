@@ -38,4 +38,10 @@ public class Garagem {
                 .sorted((v1,v2) -> v1.getPreco().compareTo(v2.getPreco()))
                 .forEach(System.out::println);
     }
+
+    public void veiculosOrdenadosDePorMarca() {
+        listaVeiculos.stream()
+                .sorted((v1,v2) -> v1.getMarca().compareTo(v2.getMarca()))
+                .forEach(System.out::println);
+    }
 }
