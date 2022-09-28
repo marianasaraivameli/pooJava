@@ -6,7 +6,9 @@ import aula04.aulaAoVivo.modelo.*;
 import aula04.aulaAoVivo.util.NumberGenerator;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class GerenciaContas {
     private Map<Integer, Conta> contas;
@@ -77,5 +79,19 @@ public class GerenciaContas {
         if (saqueRealizado) {
             contaDestino.depositar(valor);
         }
+    }
+
+    public List<String> listarTodasAsContas() {
+        return contas.values().stream()
+                .map(c -> c.toString() + "\n")
+                .collect(Collectors.toList());
+    }
+
+    public List<String> listarContaCorrentePorNumero() {
+        return contas.values().stream()
+                .filter(c -> c instanceof ContaCorrente)
+                .sorted((c1, c2) -> c1.getNumero() - c2.getNumero())
+                .map(c -> c.toString())
+                .collect(Collectors.toList());
     }
 }
